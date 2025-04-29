@@ -43,7 +43,7 @@
     <div class="bg-green-400 rounded-xl p-6 mb-4 shadow flex flex-col items-center text-white">
         <i data-lucide="gift" class="h-12 w-12 mb-2"></i>
         <h2 class="font-bold text-lg mb-1">Ppn 5% di setiap pembelian</h2>
-        <p class="text-sm">lorem lorem </p>
+        <p class="text-sm">kebijakan caffe </p>
     </div>
 
     <!-- Balance Info -->
@@ -58,8 +58,7 @@
         <div class="flex items-center gap-2">
             <i data-lucide="star" class="text-yellow-400 h-6 w-6"></i>
             <div>
-                <p class="text-gray-500">P20 Points</p>
-                <p class="font-bold text-gray-800">1.500 pts</p>
+                <p class="font-bold text-gray-800">laporan </p>
             </div>
         </div>
     </div>

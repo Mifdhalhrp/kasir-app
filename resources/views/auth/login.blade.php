@@ -139,7 +139,11 @@
     }
 </style>
 
-<div class="container-login font-modify">
+@php
+    $setting = \App\Models\UserSetting::first();
+@endphp
+
+<div class="container-login font-modify" style="background-color: {{ $setting->brand_bg_color ?? '#22c55e' }};">
     <!-- Titik-titik Kiri -->
     <div class="dots left">
         <div class="dot"></div>
@@ -157,9 +161,15 @@
     <!-- Header -->
     <div class="header-login">
         <div class="logo-circle">
-            <img src="{{ asset('asset/img/logo.png') }}" alt="Logo">
+            @if(!empty($setting->brand_logo))
+                <img src="{{ asset('storage/'.$setting->brand_logo) }}" alt="Logo">
+            @else
+                <h1 class="text-white font-bold">{{ $setting->brand_name ?? 'LatteCorner' }}</h1>
+            @endif
         </div>
-        <h2 class="text-green-800 font-bold text-lg">LatteCorner Kasir<br>POS Caffe</h2>
+        <h2 class="text-green-800 font-bold text-lg">
+            {{ $setting->brand_name ?? 'LatteCorner' }}<br>POS Caffe
+        </h2>
     </div>
 
     <!-- Shape robekan -->

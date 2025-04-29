@@ -55,7 +55,7 @@
             @endforeach
         </div>
 
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Pilih & Checkout</button>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded z-20 mb-20 p-20 ">Pilih & Checkout</button>
     </form>
     @include('components.bottom-navbar')
 </section>
